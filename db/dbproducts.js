@@ -7,331 +7,331 @@ const data = {
     productos: [
       {
         id: 1,
-        nombre: "Zapatillas Urbanas",
-        descripcion: "Zapatillas cómodas para uso diario.",
-        imagen: "/images/zapatillas.jpg",
+        nombre: "CACHAREL AMOR AMOR",
+        descripcion: "Aroma suave y duradero",
+        imagen: "/images/products/AmorAmor.jpeg",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Camila Homs",
+            textoComentario: "Es el único perfume que uso desde hace años. Nunca falla.",
+            imagenPerfil: "/images/users/Cami.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Zaira Nara",
+            textoComentario: "Me lo elogiaron tres veces el primer día que lo usé.",
+            imagenPerfil: "/images/users/Zaira.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Pampita",
+            textoComentario: "Huele a elegancia, definitivamente lo volvería a comprar.",
+            imagenPerfil: "/images/users/Pampita.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tini Stoessel",
+            textoComentario: "No pensé que me iba a durar tanto en la piel",
+            imagenPerfil: "/images/users/Tini.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "China Suarez",
+            textoComentario: "Mi pareja no para de preguntarme qué perfume estoy usando.",
+            imagenPerfil: "/images/users/China.png"
           }
         ]
       },
       {
         id: 2,
-        nombre: "Mochila Compacta",
-        descripcion: "Ideal para llevar lo esencial.",
-        imagen: "/images/mochila.jpg",
+        nombre: "CALVIN KLEIN ONE",
+        descripcion: "Ideal para todos los dias",
+        imagen: "/images/products/CalvinKlein-One.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Lali Esposito",
+            textoComentario: "Aroma delicado pero duradero. Me encanta.",
+            imagenPerfil: "/images/users/Lali.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tuli Acosta",
+            textoComentario: "Tiene ese no sé qué que lo hace único.",
+            imagenPerfil: "/images/users/Tuli.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Valentina Zenere",
+            textoComentario: "Me hace sentir segura y femenina. Lo amo.",
+            imagenPerfil: "/images/users/Valen.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Ideal para regalar. Fue un acierto total.",
+            imagenPerfil: "/images/users/Nicki.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Emilia Mernes",
+            textoComentario: "Tiene un aroma limpio y elegante, ideal para todos los días.",
+            imagenPerfil: "/images/users/Emilia.png"
           }
         ]
       },
       {
         id: 3,
-        nombre: "Cafetera Moulinex",
-        descripcion: "Ideal para el cafe de todas las mañanas",
+        nombre: "CAROLINA HERRERA 212 VIP ROSE ",
+        descripcion: "Inteso y sofistifado",
         imagen: "/images/products/cafetera-moulinex.jpg",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Valentina Zenere",
+            textoComentario: "Ideal para regalar. Fue un acierto total.",
+            imagenPerfil: "/images/users/Valen.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Tiene un aroma limpio y elegante, ideal para todos los días.",
+            imagenPerfil: "/images/users/Nicki.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "China Suarez",
+            textoComentario: "Me hace sentir segura y femenina. Lo amo.",
+            imagenPerfil: "/images/users/China.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Lali Esposito",
+            textoComentario: "Tiene ese no sé qué que lo hace único.",
+            imagenPerfil: "/images/users/Lali.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Pampita",
+            textoComentario: "Mi pareja no para de preguntarme qué perfume estoy usando.",
+            imagenPerfil: "/images/users/Pampita.png"
           }
         ]
       },
       {
         id: 4,
-        nombre: "Computadora Macbook Pro",
-        descripcion: "Modelo 2019 en perfecto estado",
-        imagen: "/images/products/macbook-pro-2019.jpg",
+        nombre: "CHANEL CHANCE",
+        descripcion: "Aroma frutal, dulce y equilibrado",
+        imagen: "/images/products/Chance-Chanel.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Camila Homs",
+            textoComentario: "Tiene un aroma limpio y elegante, ideal para todos los días.",
+            imagenPerfil: "/images/users/Cami.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Zaira Nara",
+            textoComentario: "Me hace sentir segura y femenina. Lo amo.",
+            imagenPerfil: "/images/users/Zaira.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Aroma delicado pero duradero. Me encanta.",
+            imagenPerfil: "/images/users/Nicki.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tini Stoessel",
+            textoComentario: "No pensé que me iba a durar tanto en la piel",
+            imagenPerfil: "/images/users/Tini.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
-          }
+            nombreUsuario: "Pampita",
+            textoComentario: "Huele a elegancia, definitivamente lo volvería a comprar.",
+            imagenPerfil: "/images/users/Pampita.png"
+          },
         ]
       },
       {
         id: 5,
-        nombre: "Celular Samsung Galaxy s10",
-        descripcion: "Celular de ultima generacion",
-        imagen: "/image/products/samsung-galaxy-s10.jpg",
+        nombre: "MARC JACOBS DAISY EAU SO FRESH",
+        descripcion: "Aroma ligero y encantador",
+        imagen: "/image/products/Daisy-MJ.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "China Suarez",
+            textoComentario: "Tiene ese no sé qué que lo hace único.",
+            imagenPerfil: "/images/users/China.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Emilia Mernes",
+            textoComentario: "Aroma delicado pero duradero. Me encanta.",
+            imagenPerfil: "/images/users/Emilia.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Zaira Nara",
+            textoComentario: "No pensé que me iba a durar tanto en la piel",
+            imagenPerfil: "/images/users/Zaira.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tuli Acosta",
+            textoComentario: "Es el único perfume que uso desde hace años. Nunca falla.",
+            imagenPerfil: "/images/users/Tuli.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Mi pareja no para de preguntarme qué perfume estoy usando.",
+            imagenPerfil: "/images/users/Nicki.png"
           }
         ]
       },
       {
         id: 6,
-        nombre: "Televisor Samsung Smart",
-        descripcion: "Televisor de 150 pulgadas",
-        imagen: "/image/products/tv-samsung-smart.jpg",
+        nombre: "PACO RABANNE FAME",
+        descripcion: "Aroma elegante y moderno",
+        imagen: "/image/products/Fame-PacoRabanne.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Camila Homs",
+            textoComentario: "Es el único perfume que uso desde hace años. Nunca falla.",
+            imagenPerfil: "/images/users/Cami.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Zaira Nara",
+            textoComentario: "Me lo elogiaron tres veces el primer día que lo usé.",
+            imagenPerfil: "/images/users/Zaira.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Pampita",
+            textoComentario: "Huele a elegancia, definitivamente lo volvería a comprar.",
+            imagenPerfil: "/images/users/Pampita.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tini Stoessel",
+            textoComentario: "No pensé que me iba a durar tanto en la piel",
+            imagenPerfil: "/images/users/Tini.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "China Suarez",
+            textoComentario: "Mi pareja no para de preguntarme qué perfume estoy usando.",
+            imagenPerfil: "/images/users/China.png"
           }
         ]
       },
       {
         id: 7,
-        nombre: "",
-        descripcion: "",
-        imagen: "/image/products/",
+        nombre: "CAROLINA HERRERA VERY GOOD GIRL ",
+        descripcion: "Sofisticacion embotellada",
+        imagen: "/image/products/GoodGirl.jpg",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Camila Homs",
+            textoComentario: "Tiene un aroma limpio y elegante, ideal para todos los días.",
+            imagenPerfil: "/images/users/Cami.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Zaira Nara",
+            textoComentario: "Me hace sentir segura y femenina. Lo amo.",
+            imagenPerfil: "/images/users/Zaira.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Aroma delicado pero duradero. Me encanta.",
+            imagenPerfil: "/images/users/Nicki.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tini Stoessel",
+            textoComentario: "No pensé que me iba a durar tanto en la piel",
+            imagenPerfil: "/images/users/Tini.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Pampita",
+            textoComentario: "Huele a elegancia, definitivamente lo volvería a comprar.",
+            imagenPerfil: "/images/users/Pampita.png"
           }
         ]
       },
       {
         id: 8,
-        nombre: "",
-        descripcion: "",
-        imagen: "/image/products/",
+        nombre: "MISS DIOR",
+        descripcion: "Aroma con estilo y personalidad",
+        imagen: "/image/products/MissDior.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Lali Esposito",
+            textoComentario: "Aroma delicado pero duradero. Me encanta.",
+            imagenPerfil: "/images/users/Lali.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tuli Acosta",
+            textoComentario: "Tiene ese no sé qué que lo hace único.",
+            imagenPerfil: "/images/users/Tuli.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Valentina Zenere",
+            textoComentario: "Me hace sentir segura y femenina. Lo amo.",
+            imagenPerfil: "/images/users/Valen.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Ideal para regalar. Fue un acierto total.",
+            imagenPerfil: "/images/users/Nicki.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Emilia Mernes",
+            textoComentario: "Tiene un aroma limpio y elegante, ideal para todos los días.",
+            imagenPerfil: "/images/users/Emilia.png"
           }
         ]
       },
       {
         id: 9,
-        nombre: "",
-        descripcion: "",
-        imagen: "/image/products/",
+        nombre: "PACO RABANNE OLYMPEA",
+        descripcion: "Elegancia que perdura",
+        imagen: "/image/products/Olympea-PacoRabanne.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Valentina Zenere",
+            textoComentario: "Ideal para regalar. Fue un acierto total.",
+            imagenPerfil: "/images/users/Valen.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Nicki Nicole",
+            textoComentario: "Tiene un aroma limpio y elegante, ideal para todos los días.",
+            imagenPerfil: "/images/users/Nicki.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "China Suarez",
+            textoComentario: "Me hace sentir segura y femenina. Lo amo.",
+            imagenPerfil: "/images/users/China.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Lali Esposito",
+            textoComentario: "Tiene ese no sé qué que lo hace único.",
+            imagenPerfil: "/images/users/Lali.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Pampita",
+            textoComentario: "Mi pareja no para de preguntarme qué perfume estoy usando.",
+            imagenPerfil: "/images/users/Pampita.png"
           }
         ]
       },
       {
         id: 10,
-        nombre: "",
-        descripcion: "",
-        imagen: "/image/products/",
+        nombre: "YSL LIBRE",
+        descripcion: "Un clasico moderno y atemporal",
+        imagen: "/image/products/YSL-Libre.webp",
         comentarios: [
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Camila Homs",
+            textoComentario: "Es el único perfume que uso desde hace años. Nunca falla.",
+            imagenPerfil: "/images/users/Cami.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Zaira Nara",
+            textoComentario: "Me lo elogiaron tres veces el primer día que lo usé.",
+            imagenPerfil: "/images/users/Zaira.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Pampita",
+            textoComentario: "Huele a elegancia, definitivamente lo volvería a comprar.",
+            imagenPerfil: "/images/users/Pampita.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "Tini Stoessel",
+            textoComentario: "No pensé que me iba a durar tanto en la piel",
+            imagenPerfil: "/images/users/Tini.png"
           },
           {
-            nombreUsuario: "MartinaP",
-            textoComentario: "Muy cómodas, me gustaron mucho",
-            imagenPerfil: ""
+            nombreUsuario: "China Suarez",
+            textoComentario: "Mi pareja no para de preguntarme qué perfume estoy usando.",
+            imagenPerfil: "/images/users/China.png"
           }
         ]
       }
