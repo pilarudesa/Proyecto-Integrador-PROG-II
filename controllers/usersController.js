@@ -1,6 +1,6 @@
 /*requiero el moudlo que todavia no cree*/
 
-const users = require("../db/dbusers")
+const users = require("../db/data")
 
 const usersController = {
     registro: function (req , res) {

@@ -1,10 +1,11 @@
+const data = require("../db/data")
 
 const indexController = {
-    index: function(req, res, next) {
-        res.render('index');
+    index: function(req, res) {
+        res.render('index', {listaProductos:data.productos});
       },
     
-    resultadoBusqueda : function(req, res, next) {
+    resultadoBusqueda : function(req, res) {
         res.render('search-results');
       
       },
