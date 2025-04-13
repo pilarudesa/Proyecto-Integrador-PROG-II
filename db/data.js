@@ -1,4 +1,4 @@
-const usuario = [{
+const usuario = {
     nombre: "Agustina",
     apellido: "Gonzales",
     email: "agusgonzales@gmail.com",
@@ -6,7 +6,7 @@ const usuario = [{
     fechaNacimiento: "2003-05-10",
     imagenPerfil: "/images/users/img-home-banner.jpg"
 
-}];
+};
 
 const productos = [{
     id: 1,

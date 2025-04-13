@@ -15,14 +15,6 @@ router.get("/register", usersController.registro)
 router.get("/login", usersController.login)
 
 
-router.get("/profile", function (req , res) {
-  /*todavia no tenemos la base de datos*/
-  const usuario = {
-    nombre: "Martina Goyanes",
-    email: "martina@email.com",
-    foto: "/images/foto-perfil.jpg"
-  };
-  res.render("profile", {usuario})
-})
+router.get("/profile", usersController.profile)
 
 module.exports = router;
