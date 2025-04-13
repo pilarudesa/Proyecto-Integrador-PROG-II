@@ -1,4 +1,3 @@
-/*todavia no tenemos base de datos real pero lo dejo armado*/
 
 const products = require("../db/dbproducts")
 

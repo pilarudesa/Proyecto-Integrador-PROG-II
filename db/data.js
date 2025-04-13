@@ -1,4 +1,4 @@
-const usuario = {
+/*const usuario = {
     nombre: "Agustina",
     apellido: "Gonzales",
     email: "agusgonzales@gmail.com",
@@ -163,3 +163,5 @@ module.exports = {
     usuario,
     productos
 };
+
+*/
