@@ -1,6 +1,6 @@
 /*requiero el moudlo que todavia no cree*/
 
-const users = require("../db/data")
+const users = require("../db/dbproducts")
 
 const usersController = {
     registro: function (req , res) {

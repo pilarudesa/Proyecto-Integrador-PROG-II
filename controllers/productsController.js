@@ -18,7 +18,7 @@ const productsController = {
                     arrayProducts.push(products.lista[i])
                 }
             if (arrayProducts == 0) {
-                res.send("no se han encontrado productos con ese id")
+                res.send("No se han encontrado productos con ese id")
             } 
             else {
                 res.send(arrayProducts);

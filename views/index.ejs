@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link width="" rel="shortcut icon" href="/images/logo-mercado-liebre.jpg" />
+	<link rel="stylesheet" href="../public/stylesheets/style.css">
 
 	<title> Mercado Liebre Argentina</title>
 	<!-- Font Awesome Stylesheet -->
@@ -45,8 +46,8 @@
 							<article class="product-box_data">
 								<h2><%= listaProductos[i].nombre %></h2>
 								<p><%= listaProductos[i].descripcion %></p>
-								<p><%= listaProductos[i].comentarios[0].texto %></p>
-								<p><%= listaProductos[i].comentarios[0].usuario %></p>
+								<p><%= listaProductos[i].comentarios[0].textoComentario %></p>
+								<p><%= listaProductos[i].comentarios[0].Nombreusuario %></p>
 							</article>
 						</a>
 					</section>

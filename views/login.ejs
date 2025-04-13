@@ -26,33 +26,16 @@
 		<div class="row">
 			<div class="col-12">
 				<h2 class="products-title">Ingresar</h2>
-				<form class="form-login" action="search-results.ejs" method="GET">
-					<div class="form">
-						<input type="email" name="email" placeholder="Email" value="">
-
-					</div>
-
-					<div class="form">
-						<input type="contrasenia" name="contrasenia" placeholder="Contrasenia">
-
-					</div>
-					
-					<div class="form">
-						<input type="checkbox" name="Recordame" value="">
-
-					</div>
-				</form>
 			</div>
 			<!-- Show the "ultimos" products -->
-			<form action="/" method="GET" class="form-login">
+			<form action="/resultadoBusqueda" method="GET" class="form-login">
 				<div>
 				  <label for="usuario">Usuario (email):</label>
-				  <input type="email" name="usuario" id="usuario" required>
+				  <input type="email" name="usuario" id="usuario" placeholder="Email" required>
 				</div>
-			  
 				<div>
 				  <label for="contrasena">Contraseña:</label>
-				  <input type="password" name="contrasena" id="contrasena" required>
+				  <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
 				</div>
 			  
 				<div>
