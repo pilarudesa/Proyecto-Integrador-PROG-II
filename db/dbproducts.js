@@ -1,5 +1,6 @@
 /* base de datos inventada, no hace falta requerir express aca, es un modulo (obj lit)*/
 const usuario = {
+  id: 1,
   nombre: "Agustina",
   apellido: "Gonzales",
   email: "agusgonzales@gmail.com",
@@ -12,7 +13,7 @@ const usuario = {
 const productos = [{
         id: 1,
         nombre: "CACHAREL AMOR AMOR",
-        descripcion: "Aroma suave y duradero",
+        descripcion: "Descripcion: Aroma suave y duradero",
         imagen: "/images/products/AmorAmor.jpeg",
         comentarios: [
           {
@@ -45,7 +46,7 @@ const productos = [{
       {
         id: 2,
         nombre: "CALVIN KLEIN ONE",
-        descripcion: "Ideal para todos los dias",
+        descripcion: "Descripcion: Ideal para todos los dias",
         imagen: "/images/products/CalvinKlein-One.webp",
         comentarios: [
           {
@@ -78,7 +79,7 @@ const productos = [{
       {
         id: 3,
         nombre: "CAROLINA HERRERA 212 VIP ROSE ",
-        descripcion: "Inteso y sofistifado",
+        descripcion: "Descripcion: Inteso y sofistifado",
         imagen: "/images/products/CH-Rose.jpg",
         comentarios: [
           {
@@ -111,7 +112,7 @@ const productos = [{
       {
         id: 4,
         nombre: "CHANEL CHANCE",
-        descripcion: "Aroma frutal, dulce y equilibrado",
+        descripcion: "Descripcion: Aroma frutal, dulce y equilibrado",
         imagen: "/images/products/Chance-Chanel.webp",
         comentarios: [
           {
@@ -144,7 +145,7 @@ const productos = [{
       {
         id: 5,
         nombre: "MARC JACOBS DAISY EAU SO FRESH",
-        descripcion: "Aroma ligero y encantador",
+        descripcion: "Descripcion: Aroma ligero y encantador",
         imagen: "/images/products/Daisy-MJ.webp",
         comentarios: [
           {
@@ -177,7 +178,7 @@ const productos = [{
       {
         id: 6,
         nombre: "PACO RABANNE FAME",
-        descripcion: "Aroma elegante y moderno",
+        descripcion: "Descripcion: Aroma elegante y moderno",
         imagen: "/images/products/Fame-PacoRabanne.webp",
         comentarios: [
           {
@@ -210,7 +211,7 @@ const productos = [{
       {
         id: 7,
         nombre: "CAROLINA HERRERA VERY GOOD GIRL ",
-        descripcion: "Sofisticacion embotellada",
+        descripcion: "Descripcion: Sofisticacion embotellada",
         imagen: "/images/products/GoodGirl.jpg",
         comentarios: [
           {
@@ -243,7 +244,7 @@ const productos = [{
       {
         id: 8,
         nombre: "MISS DIOR",
-        descripcion: "Aroma con estilo y personalidad",
+        descripcion: "Descripcion: Aroma con estilo y personalidad",
         imagen: "/images/products/MissDior.webp",
         comentarios: [
           {
@@ -276,7 +277,7 @@ const productos = [{
       {
         id: 9,
         nombre: "PACO RABANNE OLYMPEA",
-        descripcion: "Elegancia que perdura",
+        descripcion: "Descripcion: Elegancia que perdura",
         imagen: "/images/products/Olympea-PacoRabanne.webp",
         comentarios: [
           {
@@ -309,7 +310,7 @@ const productos = [{
       {
         id: 10,
         nombre: "YSL LIBRE",
-        descripcion: "Un clasico moderno y atemporal",
+        descripcion: "Descripcion: Un clasico moderno y atemporal",
         imagen: "/images/products/YSL-Libre.webp",
         comentarios: [
           {
