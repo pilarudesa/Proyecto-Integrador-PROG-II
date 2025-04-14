@@ -5,7 +5,7 @@ const usuario = {
   email: "agusgonzales@gmail.com",
   contraseña: "1234",
   fechaNacimiento: "2003-05-10",
-  imagenPerfil: "/images/users/img-home-banner.jpg"
+  imagenPerfil: "/images/users/Lali.png"
 
 };
 
@@ -342,5 +342,5 @@ const productos = [{
     
   ];
 
-module.exports = data;
+module.exports = {usuario , productos};
 

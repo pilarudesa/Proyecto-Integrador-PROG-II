@@ -1,5 +1,5 @@
 
-const products = require("../db/dbproducts")
+const db = require("../db/dbproducts")
 
 
 const productsController = {
@@ -10,25 +10,37 @@ const productsController = {
         
     detalle: function (req , res) {
         /*mostrar el detalle de un producto, que pidan por id (parametrizada)*/ 
-            let id = req.params.id
+            /*let id = req.params.id
             let arrayProducts = [];
-            for (let i = 0; i < products.lista.length; i++) {
-                if (id == products.lista[i].id) {
-                    arrayProducts.push(products.lista[i])
+            for (let i = 0; i < products.productos.length; i++) {
+                if (id == products.productos[i].id) {
+                    arrayProducts.push(products.productos[i])
                 }
             if (arrayProducts == 0) {
-                res.send("No se han encontrado productos con ese id")
+                res.status(404).send("No se ha encontrado ningun producto con ese id")
             } 
             else {
-                res.send(arrayProducts);
+                res.render("product",{data: arrayProducts[0]});
               }
               
             }
-        },
+        },*/
+
+        let id = req.params.id;
+        for (let idx = 0; idx < db.productos.length; idx++) {
+          if (id == db.productos[idx].id) {
+            res.render("product", { data: db.productos[idx] });
+            break;
+          }
+        }
+    
+        // Caso que no haya nada, redirigir a 404
+        res.status(404).send("No se ha encontrado el producto con ese id");
+      },
 
     formularioAdd:function (req , res) {
         /*aca formulario vacio para agregar producto, el formulario no guarda nada*/ 
-            res.render("product-add", {})
+            res.render("product-add", {usuario: db.usuario})
         },
 
 }

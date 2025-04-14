@@ -1,6 +1,6 @@
 /*requiero el moudlo que todavia no cree*/
 
-const users = require("../db/dbproducts")
+const db = require("../db/dbproducts")
 
 const usersController = {
     registro: function (req , res) {
@@ -13,7 +13,7 @@ const usersController = {
 
     profile: function (req , res) {
   
-      res.render("profile", {usuario:data.usuario})
+      res.render("profile", {usuario:db.usuario, productos:db.productos})
     }
       
     

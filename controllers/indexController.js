@@ -6,7 +6,8 @@ const indexController = {
       },
     
     resultadoBusqueda : function(req, res) {
-        res.render('search-results');
+        const producto = data.productos[0]
+        res.render('search-results', {data:producto} );
       
       },
 }
