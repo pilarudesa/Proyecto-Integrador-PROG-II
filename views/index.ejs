@@ -24,13 +24,12 @@
 	<!-- /Header -->
 
 	<!-- Banner -->
-	<div class="banner">
-		<img src="images/img-home-banner.jpg" alt="Banner de ofertas">
-	</div>
+	<div class="banner"></div>
 	<!-- /Banner -->
 
 	<!-- Novedades -->
-	<div class="container products-wrapper">
+	<section class="productos">
+
 		<div class="row">
 			<div class="col-12">
 				<h2 class="products-title">Productos</h2>
@@ -38,8 +37,9 @@
 			<!-- Show the "ultimos" products -->
 			<% for (let i=0; i < listaProductos.length; i++) { %>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<section class="product-box">
-						<a href="/product">
+					<div class="producto">
+
+						<a href="/products/id/3">
 							<figure class="product-box_image">
 								<img src="<%= listaProductos[i].imagen %>" alt="<%= listaProductos[i].nombre %>">
 							</figure>
@@ -47,15 +47,15 @@
 								<h2><%= listaProductos[i].nombre %></h2>
 								<p><%= listaProductos[i].descripcion %></p>
 								<p><%= listaProductos[i].comentarios[0].textoComentario %></p>
-								<p><%= listaProductos[i].comentarios.length %></p>
+								<p> Cantidad de comentarios: <%= listaProductos[i].comentarios.length %></p>
 							</article>
 						</a>
-					</section>
+					</div>
 				</div>
 				<%} %>
 
 		</div>
-	</div>
+	</section>
 
 
 	<%- include("./partials/footer") %>

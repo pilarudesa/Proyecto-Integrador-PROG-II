@@ -3,10 +3,7 @@ const db = require("../db/dbproducts")
 
 
 const productsController = {
-    index: function (req , res) {
-        /*mostrar todo el catalogo*/
-            res.send(products.lista)
-        },
+    
         
     detalle: function (req , res) {
         /*mostrar el detalle de un producto, que pidan por id (parametrizada)*/ 
