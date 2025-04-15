@@ -2,8 +2,8 @@
 const usuario = {
   id: 1,
   nombre: "Agustina",
-  apellido: "Gonzales",
-  email: "agusgonzales@gmail.com",
+  apellido: "Gonzalez",
+  email: "agusgonzalez@gmail.com",
   contraseña: "1234",
   fechaNacimiento: "2003-05-10",
   imagenPerfil: "/images/users/Lali.png"
@@ -245,7 +245,7 @@ const productos = [{
         id: 8,
         nombre: "MISS DIOR",
         descripcion: "Descripcion: Aroma con estilo y personalidad",
-        imagen: "/images/products/MissDior.webp",
+        imagen: "/images/products/MissDior.jpg",
         comentarios: [
           {
             nombreUsuario: "Lali Esposito",
