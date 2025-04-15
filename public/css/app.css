@@ -107,13 +107,23 @@ hr {
   font-size: 1.5em;
   margin-top: 20px;
   text-align: center;
+  margin-top: 200px;
+  margin-left: auto;
+}
+
+.col-12 col-md-4{
+  margin-top: 200px;
+  margin-left: auto;
 }
 
 .search-form {
+  margin-top: 120px;
   position: relative;
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
+
 
 .search-form_input {
   border: solid 1px var(--light-gray);
@@ -123,6 +133,7 @@ hr {
   border-radius: 3px;
   height: 40px;
   font-size: 1.5em;
+  margin-left: auto;
 }
 
 .search-form_button {
@@ -134,6 +145,7 @@ hr {
   border-left: solid 1px var(--light-gray);
   color: var(--gray);
   cursor: pointer;
+  margin-left: auto;
 }
 
 
@@ -306,6 +318,8 @@ font-family: 'Playfair Display', serif;
 
 /*====== Footer ======*/
 .main-footer {
+  display: flex;
+  
   background-color: #ffffff;
   padding: 20px 0;
   margin-top: 80px;
