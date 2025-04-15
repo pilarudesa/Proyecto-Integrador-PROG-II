@@ -227,8 +227,8 @@ hr {
 }
 
 .products-title {
-  color: var(--violeta-oscuro);
-font-family: 'Playfair Display', serif;
+  color: #880e4f;
+  font-family: 'Playfair Display', serif;
 }
 
 .producto {
@@ -489,6 +489,27 @@ font-family: 'Playfair Display', serif;
 }
 
 /*====== Formularios ======*/
+.containerproducts-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-container {
+    background-color: white;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+}
+
 .form-label {
   display: inline-block;
   font-size: 1.6em;
