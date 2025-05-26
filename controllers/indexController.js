@@ -5,12 +5,16 @@ let op = db.Sequelize.Op
 
 const indexController = {
   index: function (req, res) {
-    //res.render('index', {listaProductos:data.productos});//
+    res.render('index', {listaProductos:data.productos})
 
 
-    db.productos.findAll()
+    db.Producto.findAll()
       .then(function (data) {
-        res.render("index", { data: data })
+        res.render("index", { listaProductos: data })
+      })
+      .catch(function (err) {
+          console.log(err);
+          
       })
 
 
@@ -20,16 +24,18 @@ const indexController = {
     /*const producto = data.productos[0]
     res.render('search-results', {data:producto} );*/
 
-    let buscador = req.query.search
+    let busqueda = req.query.search
     db.Producto.findAll({
       where: {
         nombre: { [op.like]: "%" + busqueda + "%" },
       },
 
     })
-      .then(function (data) {
-        res.send(data)
-        res.send("search-results", { data: data })
+      .then(function (resultados) {
+        res.render("search-results", {
+          productos: resultados,
+          termino: busqueda,
+        });
       })
   }
 }

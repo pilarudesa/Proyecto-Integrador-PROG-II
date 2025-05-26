@@ -2,7 +2,7 @@ module.exports = {
   "development": {
     "username": "root",
     "password":  "",
-    "database": "basedatosperfumes", //no entiendo aca va el nombre que me aparece en mysql o como lo tengo guardado en la carpeta db//
+    "database": "baseDatosPerfumes", //no entiendo aca va el nombre que me aparece en mysql o como lo tengo guardado en la carpeta db//
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
