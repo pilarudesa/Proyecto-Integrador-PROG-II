@@ -7,7 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const productsRouter = require("./routes/products");
-
+const session = require("express-session")
+const db = require("./database/models");
 
 var app = express();
 
@@ -20,6 +21,33 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session( {
+  secret: "perfumeria",
+  resave: false, 
+  saveUninitialized: true
+}))
+
+app.use(function(req,res,next){
+  if(req.session.usuarioLogueado != undefined){
+    res.locals.user = req.session.usuarioLogueado
+  }
+  return next();
+}); //locals hace que se comparta con las vistas
+
+app.use(function (req,res,next){
+  if(req.session.usuarioLogueado == undefined && req.cookies.userId != undefined){
+    db.Usuario.findByPK(req.cookies.userId)
+    .then(function(data){
+      req.session.usuarioLogueado = data
+      res.locals.user = data
+    })
+  }else{
+    return next();
+  }
+})
+
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

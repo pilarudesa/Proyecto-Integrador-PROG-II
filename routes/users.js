@@ -2,19 +2,16 @@ const express = require("express");
 const router = express.Router();
 const usersController = require("../controllers/usersController");
 
-/* GET users listing. 
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
-lo comento pero no nos sirve
-*/
-router.get("/register", usersController.registro)
+router.get("/register", usersController.registroMostrar)
+router.post("/register", usersController.registroProcesar)
 
-
-router.get("/login", usersController.login)
+router.get("/login", usersController.loginMostrar) //lo cambie a post, tengo que ahrehar mas rutas?
+//router.post()
 
 
 router.get("/profile", usersController.profile)
+
+//router.post("logout")
 
 module.exports = router;
