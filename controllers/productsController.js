@@ -7,6 +7,15 @@ const productsController = {
   /*ahora todo tiene que venir de la base de datos de mysql*/
 
   detalle: function (req, res) {
+    db.Producto.findBypk(req.params.id, {
+      include: [
+        {association: 'usuario'},
+        {association: 'comentarios'}
+      ]
+      .then(function(resultado){
+        res.render('product', {producto})
+    })
+  })
 
     let id = req.params.id
     db.Producto.findOne({
