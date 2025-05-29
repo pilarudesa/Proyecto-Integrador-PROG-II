@@ -18,7 +18,11 @@
 
 <body>
 	<!-- Header -->
-	<%- include("./partials/header")  %>
+	<% if (locals.user ) {%>
+		<%- include("./partials/headerLogueado", {usuario: locals.user})  %>
+	<% }else {%>
+		<%- include("./partials/header")  %>
+	<%}%>
 	<!-- /Header -->
 
 	<!-- Novedades -->
@@ -28,7 +32,7 @@
 				<h2 class="products-title">Ingresar</h2>
 			</div>
 			<!-- Show the "ultimos" products -->
-			<form action="/" method="post" class="form-login">
+			<form action="/users/login" method="post" class="form-login">
 				<div>
 				  <label for="usuario">Usuario (email):</label>
 				  <input type="email" name="usuario" id="usuario" placeholder="Email" required>

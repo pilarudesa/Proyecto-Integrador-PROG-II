@@ -8,10 +8,14 @@ const indexController = {
     //res.render('index', {listaProductos:data.productos});//
 
 
-    db.productos.findAll()
+    db.Producto.findAll({
+      include: [{association: "comentarios" },{association: "usuario", }]
+    })
       .then(function (data) {
-        res.render("index", { data: data })
+        //res.send(data)
+        res.render("index", { listaProductos: data })
       })
+
 
 
   },

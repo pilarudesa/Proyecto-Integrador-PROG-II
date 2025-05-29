@@ -133,62 +133,61 @@ VALUES (
   1
 );
 
-DELETE FROM productos
-WHERE id = 5;
+
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(2, 4, 'Aroma delicado pero duradero. Me encanta.'),
-(2, 9, 'Tiene ese no sé qué que lo hace único.'),
-(2, 8, 'Me hace sentir segura y femenina. Lo amo.');
+(2, 1, 'Aroma delicado pero duradero. Me encanta.'),
+(2, 2, 'Tiene ese no sé qué que lo hace único.'),
+(2, 3, 'Me hace sentir segura y femenina. Lo amo.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(3, 8, 'Ideal para regalar. Fue un acierto total.'),
-(3, 10, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
-(3, 2, 'Me hace sentir segura y femenina. Lo amo.');
+(3, 2, 'Ideal para regalar. Fue un acierto total.'),
+(3, 3, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
+(3, 4, 'Me hace sentir segura y femenina. Lo amo.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(4, 1, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
-(4, 6, 'Me hace sentir segura y femenina. Lo amo.'),
-(4, 10, 'Aroma delicado pero duradero. Me encanta.');
+(4, 3, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
+(4, 4, 'Me hace sentir segura y femenina. Lo amo.'),
+(4, 5, 'Aroma delicado pero duradero. Me encanta.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(5, 2, 'Tiene ese no sé qué que lo hace único.'),
-(5, 3, 'Aroma delicado pero duradero. Me encanta.'),
-(5, 6, 'No pensé que me iba a durar tanto en la piel');
+(5, 4, 'Tiene ese no sé qué que lo hace único.'),
+(5, 5, 'Aroma delicado pero duradero. Me encanta.'),
+(5, 1, 'No pensé que me iba a durar tanto en la piel');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(6, 1, 'Es el único perfume que uso desde hace años. Nunca falla.'),
-(6, 6, 'Me lo elogiaron tres veces el primer día que lo usé.'),
-(6, 7, 'Huele a elegancia, definitivamente lo volvería a comprar.');
+(6, 5, 'Es el único perfume que uso desde hace años. Nunca falla.'),
+(6, 1, 'Me lo elogiaron tres veces el primer día que lo usé.'),
+(6, 2, 'Huele a elegancia, definitivamente lo volvería a comprar.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
 (7, 1, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
-(7, 6, 'Me hace sentir segura y femenina. Lo amo.'),
-(7, 10, 'Aroma delicado pero duradero. Me encanta.');
+(7, 2, 'Me hace sentir segura y femenina. Lo amo.'),
+(7, 3, 'Aroma delicado pero duradero. Me encanta.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(8, 4, 'Aroma delicado pero duradero. Me encanta.'),
-(8, 9, 'Tiene ese no sé qué que lo hace único.'),
-(8, 8, 'Me hace sentir segura y femenina. Lo amo.');
+(8, 2, 'Aroma delicado pero duradero. Me encanta.'),
+(8, 3, 'Tiene ese no sé qué que lo hace único.'),
+(8, 4, 'Me hace sentir segura y femenina. Lo amo.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(9, 8, 'Ideal para regalar. Fue un acierto total.'),
-(9, 10, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
-(9, 2, 'Me hace sentir segura y femenina. Lo amo.')
+(9, 3, 'Ideal para regalar. Fue un acierto total.'),
+(9, 4, 'Tiene un aroma limpio y elegante, ideal para todos los días.'),
+(9, 5, 'Me hace sentir segura y femenina. Lo amo.');
 
 INSERT INTO comentarios (idProducto, idUsuario, textoComentario)
 VALUES
-(10, 1, 'Es el único perfume que uso desde hace años. Nunca falla.'),
-(10, 6, 'Me lo elogiaron tres veces el primer día que lo usé.'),
-(10, 7, 'Huele a elegancia, definitivamente lo volvería a comprar.');
-select * from usuarios
+(10, 4, 'Es el único perfume que uso desde hace años. Nunca falla.'),
+(10, 5, 'Me lo elogiaron tres veces el primer día que lo usé.'),
+(10, 5, 'Huele a elegancia, definitivamente lo volvería a comprar.');
+
 
     

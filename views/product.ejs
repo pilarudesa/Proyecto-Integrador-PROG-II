@@ -16,7 +16,11 @@
 </head>
 <body>
 	<!-- Header -->
-	<%- include("./partials/header")  %>
+	<% if (locals.user ) {%>
+		<%- include("./partials/headerLogueado", {usuario: locals.user})  %>
+	<% }else {%>
+		<%- include("./partials/header")  %>
+	<%}%>
 	<!-- /Header -->
 	
 	<!-- product detail -->
@@ -38,10 +42,12 @@
 					<section class="comments">
 						<% for (let i=0; i < data.comentarios.length; i++) { %>
 							<article>
-								<img src="<%= data.comentarios[i].imagenPerfil %>" alt="">
+								<img src="<%= data.comentarios[i].usuario.imagenPerfil %>" alt="">
 								<div class="data">
 									<p class="user">
-									<strong> <a href="/"> <%= data.comentarios[i].nombreUsuario %> : </a> </strong>
+									<strong> <a href="/"> <%= data.comentarios[i].usuario.usuario %> : </a> </strong>
+									<!--usuario es el alias del modelo en la relacion-->
+									
 									<%= data.comentarios[i].textoComentario %></p>
 								</div>
 							</article>
@@ -50,10 +56,19 @@
 					
 
 					</section>
-					<form class="form" action="" method="POST">
-						<input class="form-input" type="text" value="" placeholder="Agregar comentario">
+					<% if (locals.user ) {%>
+						
+						<form class="form" action="" method="POST">
+						<input class="form-input" type="text" name= "texto" value="" placeholder="Agregar comentario">
+						<input type="hidden" name="pk_producto" value="<%= id %>">
+						<input type="hidden" name="pk_usuario" value="<%= locals.id %>">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
+						
 					</form>
+					<% }else {%>
+						<p> "Para comentar tenes que estar logueado</p>
+					<%}%>
+					
 					<hr>
 				</div>
 			</div>

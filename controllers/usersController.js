@@ -28,6 +28,7 @@ const usersController = {
         console.log(data);
         
         res.redirect("/users/login")
+
       })
   },
 
@@ -36,21 +37,23 @@ const usersController = {
   },
 
   loginNuevo: function (req, res) {
-    db.User.findOne({
+    
+    db.Usuario.findOne({
       where: {
-        email: req.body.email //nombre input y tabla
+        email: req.body.usuario //nombre input y tabla
       }
     })     
     .then(function (data) {
       res.send(data)
         if (data) { //si existe el usuario: usas el metodo de compare syinc, deshashea uno y los compara.si es correcta
-          if (bcrypt.compareSyinc(req.body.pass, data.password)) { //si todo da bien lo manda al index o a profile?
+          if (bcrypt.compareSync(req.body.contrasena, data.contrasenia)) { //si todo da bien lo manda al index o a profile?
             req.session.usuarioLogueado = data
             if(req.body.recordarme){
               res.cookie("userId", data.id, {maxAge: 1000 * 60 * 5})
             }
-
-            res.redirect("users/profile/"+ data.id)
+            console.log("redirijo");
+            
+            res.redirect("/users/register")
           } else {
             res.send("contraseña incorrecta")
           }
@@ -67,6 +70,10 @@ const usersController = {
 
     res.render("profile", { usuario: db.usuario, productos: db.productos })
   },
+
+  logout: function (params) {
+    
+  }
 
 
 

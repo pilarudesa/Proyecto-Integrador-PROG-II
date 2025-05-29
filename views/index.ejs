@@ -2,7 +2,7 @@
 <html lang="es">
 <!-- Include Head -->
 
-<head>
+<head> <!--hacer un partial de head-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link width="" rel="shortcut icon" href="/images/logoPerfumeria.png">
@@ -19,8 +19,13 @@
 
 <body>
 	<!-- Header -->
-
-	<%- include("./partials/header")  %>
+	<% if (locals.user ) {%>
+		<%- include("./partials/headerLogueado", {usuario: locals.user})  %>
+	<% }else {%>
+		<%- include("./partials/header")  %>
+	<%}%>
+	 
+	
 	<!-- /Header -->
 
 	<!-- Banner -->
@@ -39,15 +44,15 @@
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="producto">
 
-						<a href="/products/id/3">
+						<a href="/products/id/ <%= listaProductos[i].id %>">
 							<figure class="product-box_image">
 								<img src="<%= listaProductos[i].imagen %>" alt="<%= listaProductos[i].nombre %>">
 							</figure>
 							<article class="product-box_data">
 								<h2><%= listaProductos[i].nombre %></h2>
 								<p><%= listaProductos[i].descripcion %></p>
-								<p><%= listaProductos[i].comentarios[0].textoComentario %></p>
 								<p> Cantidad de comentarios: <%= listaProductos[i].comentarios.length %></p>
+								<a href="/users/profile/<%= listaProductos[i].usuario.id %>"> <%= listaProductos[i].usuario.usuario %>  </a>
 							</article>
 						</a>
 					</div>
