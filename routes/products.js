@@ -10,7 +10,7 @@ router.get("/id/:id", productsController.detalle);
 router.get("/add", productsController.formularioAdd)
 router.get("/add" ,productsController.procesarFormularioAdd)
 
-router.post("/", productsController.agregarComentario) //no se si esta mal que la ruta sea esa, no deberia ser la dle id
+router.post("/id/:id", productsController.agregarComentario) //no se si esta mal que la ruta sea esa, no deberia ser la dle id
 
 
 module.exports = router
