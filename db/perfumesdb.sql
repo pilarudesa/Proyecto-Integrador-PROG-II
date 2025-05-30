@@ -66,7 +66,7 @@ VALUES (
   'CALVIN KLEIN ONE',
   'Descripcion: Ideal para todos los dias',
   '/images/products/CalvinKlein-One.webp',
-  1
+  2
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
@@ -74,7 +74,7 @@ VALUES (
   'CAROLINA HERRERA 212 VIP ROSE',
   'Descripcion: Inteso y sofistifado',
   '/images/products/CH-Rose.jpg',
-  1
+  3
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
@@ -82,7 +82,7 @@ VALUES (
   'CHANEL CHANCE',
   'Descripcion: Aroma frutal, dulce y equilibrado',
   '/images/products/Chance-Chanel.webp',
-  1
+  4
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
@@ -90,7 +90,7 @@ VALUES (
   'MARC JACOBS DAISY EAU SO FRESH',
   'Descripcion: Aroma ligero y encantador',
   '/images/products/Daisy-MJ.webp',
-  1
+  4
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
@@ -106,15 +106,15 @@ VALUES (
   'CAROLINA HERRERA VERY GOOD GIRL',
   'Descripcion: Sofisticacion embotellada',
   '/images/products/GoodGirl.jpg',
-  1
+  2
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
 VALUES (
   'MISS DIOR',
   'Descripcion: Aroma con estilo y personalidad',
-  '/images/products/MissDior.webp',
-  1
+  '/images/products/MissDior.jpg', 
+  3
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
@@ -122,7 +122,7 @@ VALUES (
   'PACO RABANNE OLYMPEA',
   'Descripcion: Elegancia que perdura',
   '/images/products/Olympea-PacoRabanne.webp',
-  1
+  4
 );
 
 INSERT INTO productos (nombre, descripcion, imagen, idUsuario)
@@ -130,7 +130,7 @@ VALUES (
   'YSL LIBRE',
   'Descripcion: Un clasico moderno y atemporal',
   '/images/products/YSL-Libre.webp',
-  1
+  5
 );
 
 

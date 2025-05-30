@@ -31,7 +31,8 @@
 			<div class="col-12">
 				<h2 class="products-title">Agregar productos</h2>
 			</div>
-			<form action="/" method="GET">
+			<% if (locals.user ) {%>
+			<form action="/products/add" method="GET">
 				<div>
 				  <label>Nombre:</label><input type="text" name="nombre">
 				  <label>Descripción:</label><input type="text" name="descripcion">
@@ -39,7 +40,9 @@
 				  <button type="submit">Enviar</button>
 				</div>
 			  </form>
-			  
+			 <% }else {%>
+						<p> "Para agregar un producto tenes que estar logueado</p>
+					<%}%> 
 	
 
 	<!-- footer -->

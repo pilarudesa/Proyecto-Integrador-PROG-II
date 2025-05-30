@@ -71,8 +71,8 @@ const usersController = {
     res.render("profile", { usuario: db.usuario, productos: db.productos })
   },
 
-  logout: function (params) {
-    
+  logout: function (req,res) {
+    //aca va el logout
   }
 
 

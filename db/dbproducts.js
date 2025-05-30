@@ -1,4 +1,4 @@
-/* base de datos inventada, no hace falta requerir express aca, es un modulo (obj lit)*/
+/*no se si borrarla*/
 const usuario = {
   id: 1,
   nombre: "Agustina",
