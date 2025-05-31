@@ -36,15 +36,12 @@ app.use(function(req,res,next){
 }); //locals hace que se comparta con las vistas
 
 app.use(function (req,res,next){
-  if(req.session.usuarioLogueado == undefined && req.cookies.userId != undefined){
-    db.Usuario.findByPK(req.cookies.userId)
-    .then(function(data){
-      req.session.usuarioLogueado = data
-      res.locals.user = data
-    })
-  }else{
-    return next();
+  if(req.session.usuarioLogueado == undefined && req.cookies.user != undefined){
+  
+      req.session.usuarioLogueado = req.cookies.user
+      res.locals.user = req.cookies.user  
   }
+  return next();
 })
 
 

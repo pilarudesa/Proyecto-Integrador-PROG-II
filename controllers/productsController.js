@@ -21,55 +21,52 @@ const productsController = {
         })
             .then(function (data) {
                 //res.send(data)
-                res.render("product", { data: data, id: req.params.id })
+                res.render("product", { data: data })
             });
     },
 
 
-    aregarComentario: function (req, res) {  //no se si esta bine que este aca esto
+    agregarComentario: function (req, res) {  //no se si esta bine que este aca esto
         /*aca procesa el formulario*/
-        if (!req.session.usuariologuedo) {
-            return res.redirect("/users/login");
-        }
-
-        let nuevoComentario = {
+        //res.send(req.body)
+        
+    
+        db.Comentario.create({
             textoComentario: req.body.texto,
-            idProducto: req.body.pk_producto,
-            idUsuario: req.body.pk_usuario,
+            idProducto: req.params.id,
+            idUsuario: req.session.usuarioLogueado.id
 
-        };
+        })
+            .then(function () {
+                res.redirect("/products/id/" + req.params.id);
 
-        db.Comentario.create(nuevoComentario)
-            .then(function (data) {
-                res.redirect("/products/id/" + req.body.pk_producto);
             })
 
-            .catch(function (error) {
-                console.log("Error al guardar comentario:", error)
-            })
+            
     },
 
-    formularioAdd: function (req, res) {
+    mostrarFormulario: function (req, res) {
         /*aca mostrar formulario*/
-        res.render("product-add", { usuario: db.usuario }) //
+        if(req.session.usuarioLogueado){
+            res.render("product-add", { usuario: db.usuario })
+        }else{
+            res.redirect("/users/login")
+        }
     },
 
-    procesarFormularioAdd: function (req, res) {
-        if (!req.session.usuariologueado) {
-            return res.redirect("/users/login");
-        }
+    agregarProducto: function (req, res) {
 
         let NuevoProducto = {
             nombre : req.body.nombre,
             descripcion : req.body.descripcion,
             imagen: req.body.imagen,
-            idUsuario: req.session.usuariologueado
+            idUsuario: req.session.usuarioLogueado.id
         };
 
         db.Producto.create(NuevoProducto)
 
-        .then(function (data){
-            res.redirect("/")
+        .then(function (){
+            res.redirect("/users/profile/ "+ req.session.usuarioLogueado.id)
         })
 
         .catch(function (error) {
@@ -78,6 +75,7 @@ const productsController = {
         });
 
     }
+    //
 
 };
 

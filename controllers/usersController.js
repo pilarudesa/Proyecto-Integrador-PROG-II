@@ -7,12 +7,20 @@ let op = db.Sequelize.Op
 const usersController = {
 
   registroMostrar: function (req, res) {
-    res.render("register")
+     if(!req.session.usuarioLogueado){
+      res.render("register")
+    } else{
+      res.redirect("/")
+    }
+    
   },
 
   registroProcesar: function (req, res) { 
     //res.send(req.body)
-    
+    //falta 
+    if (req.body.password < 3){
+      return res.send("no puede estra vacia la ocntraseña")
+    }
     let usuario = {
       email: req.body.email,
       usuario: req.body.usuario,
@@ -21,6 +29,7 @@ const usersController = {
       dni: req.body.documento,
       imagenPerfil: req.body.foto
     }
+    
     console.log(usuario);
     
     db.Usuario.create(usuario) //las propiedades tienen que ser el nombre que este en las tablas y el otro el nombre dle modelo
@@ -33,7 +42,12 @@ const usersController = {
   },
 
   loginMostrar: function (req, res) {
-    res.render("login");
+    if(!req.session.usuarioLogueado){
+      res.render("login");
+    } else{
+      res.redirect("/")
+    }
+    
   },
 
   loginNuevo: function (req, res) {
@@ -44,16 +58,16 @@ const usersController = {
       }
     })     
     .then(function (data) {
-      res.send(data)
+      
         if (data) { //si existe el usuario: usas el metodo de compare syinc, deshashea uno y los compara.si es correcta
           if (bcrypt.compareSync(req.body.contrasena, data.contrasenia)) { //si todo da bien lo manda al index o a profile?
             req.session.usuarioLogueado = data
             if(req.body.recordarme){
-              res.cookie("userId", data.id, {maxAge: 1000 * 60 * 5})
+              res.cookie("user", data, {maxAge: 1000 * 60 * 5})
             }
-            console.log("redirijo");
+            //console.log("redirijo");
             
-            res.redirect("/users/register")
+            return res.redirect("/")
           } else {
             res.send("contraseña incorrecta")
           }
@@ -67,20 +81,35 @@ const usersController = {
   },
 
   profile: function (req, res) {
-
-    res.render("profile", { usuario: db.usuario, productos: db.productos })
+    let id = req.params.id
+    db.Usuario.findByPk(
+      id, {
+         include: [
+                {
+                    association: "comentarios",
+                },
+                {
+                    association: "productos",
+                    include : ["comentarios"]
+                }
+            ]
+      }
+    ).then(function (data) {
+      //res.send(data)
+      res.render("profile", {data:data})
+    })
+    
   },
 
   logout: function (req,res) {
-    //aca va el logout
+    req.session.destroy()
+    if (req.cookies.user) {
+      res.clearCookie("user")
+    }
+    res.redirect("/")
   }
 
-
-
-
 }
-
-
 
 
 module.exports = usersController

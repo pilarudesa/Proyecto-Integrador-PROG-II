@@ -58,10 +58,8 @@
 					</section>
 					<% if (locals.user ) {%>
 						
-						<form class="form" action="/products/add" method="POST"> <!--creo que esta mal que vaya a esa ruta-->
+						<form class="form" action="/products/id/<%=data.id%>" method="POST"> <!--creo que esta mal que vaya a esa ruta-->
 						<input class="form-input" type="text" name= "texto" value="" placeholder="Agregar comentario">
-						<input type="hidden" name="pk_producto" value="<%= id %>">
-						<input type="hidden" name="pk_usuario" value="<%= locals.id %>"> <!--locals.user.id ?-->
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
 						
 					</form>
