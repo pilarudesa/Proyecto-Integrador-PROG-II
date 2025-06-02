@@ -17,9 +17,21 @@ const usersController = {
 
   registroProcesar: function (req, res) {
 
-    if (!req.body.password.length < 3) {
-      return res.render("register", { error: "la contraseña tiene que tener al menos tres caracteres" })
+     if (req.body.password.length < 3) {
+      return res.render("register", { error: "La contraseña tiene que tener al menos tres caracteres" })
     }
+
+    db.Usuario.findOne({
+      where: {
+        email: req.body.email
+      }
+    })
+    .then(emailExiste => {
+      if (emailExiste) {
+        return res.render("register", { error: "El email ingresado ya está registrado" })
+      }
+    })
+
     let usuario = {
       email: req.body.email,
       usuario: req.body.usuario,
