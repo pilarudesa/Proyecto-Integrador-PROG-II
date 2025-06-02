@@ -55,7 +55,11 @@
 								<h2><%= listaProductos[i].nombre %></h2>
 								<p><%= listaProductos[i].descripcion %></p>
 								<p> Cantidad de comentarios: <%= listaProductos[i].comentarios.length %></p>
-								<a href="/users/profile/<%= listaProductos[i].usuario.id %>"> <%= listaProductos[i].usuario.usuario %>  </a>
+								<p>
+									Cargado por:&nbsp<a href="/users/profile/<%= listaProductos[i].usuario.id %>">
+										<%= listaProductos[i].usuario.usuario %>
+									</a>
+								 </p>
 							</article>
 						</a>
 					</div>
