@@ -1,6 +1,6 @@
 
 const db = require("../database/models");
-let op = db.Sequelize.Op
+const op = db.Sequelize.Op
 
 
 const indexController = {
