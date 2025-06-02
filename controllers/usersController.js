@@ -8,7 +8,7 @@ const usersController = {
 
   registroMostrar: function (req, res) {
      if(!req.session.usuarioLogueado){
-      res.render("register")
+      res.render("register", {error: ""})
     } else{
       res.redirect("/")
     }
