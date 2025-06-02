@@ -15,11 +15,10 @@ const usersController = {
     
   },
 
-  registroProcesar: function (req, res) { 
-    //res.send(req.body)
-    //falta 
-    if (req.body.password < 3){
-      return res.send("no puede estra vacia la ocntraseña")
+  registroProcesar: function (req, res) {
+
+    if (!req.body.password.length < 3) {
+      return res.render("register", { error: "la contraseña tiene que tener al menos tres caracteres" })
     }
     let usuario = {
       email: req.body.email,
@@ -42,9 +41,9 @@ const usersController = {
   },
 
   loginMostrar: function (req, res) {
-    if(!req.session.usuarioLogueado){
-      res.render("login");
-    } else{
+    if (!req.session.usuarioLogueado) {
+      res.render("login", { error: "" });
+    } else {
       res.redirect("/")
     }
     
@@ -74,8 +73,8 @@ const usersController = {
 
 
         } else {
-          res.send("no existe una cuenta con ese mail"),
-            res.redirect("users/register")
+          res.render("login", { error: "no existe una cuenta con ese mail" })
+
         }
       })
   },

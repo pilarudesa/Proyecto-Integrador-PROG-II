@@ -40,7 +40,7 @@ CREATE TABLE comentarios(
     );
 
 INSERT INTO usuarios (email, usuario, contrasenia, fechaNacimiento, dni, imagenPerfil)
-VALUES ("camila@gmail.com", "camilaHoms", "cami123", "1996-01-02", 22777335, "/images/users/Cami.png");
+VALUES ("camila@gmail.com", " Camila Homs", "cami123", "1996-01-02", 22777335, "/images/users/Cami.png");
 INSERT INTO usuarios (email, usuario, contrasenia, fechaNacimiento, dni, imagenPerfil)
 VALUES ("china@gmail.com", "China", "china123", "1992-03-09", 27888999, "/images/users/China.png");
 

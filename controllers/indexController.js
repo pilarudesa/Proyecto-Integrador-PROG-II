@@ -27,6 +27,7 @@ const indexController = {
       where: {
         nombre: { [op.like]: "%" + busqueda + "%" },
       },
+      include: [{association: "comentarios" },{association: "usuario", }]
 
     })
       .then(function (resultados) {

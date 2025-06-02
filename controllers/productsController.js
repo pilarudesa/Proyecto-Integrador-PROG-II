@@ -1,4 +1,4 @@
-const db = require("../database/models")
+const db = require("../database/models");
 const op = db.sequelize.Op
 
 const productsController = {
@@ -23,14 +23,18 @@ const productsController = {
                 //res.send(data)
                 res.render("product", { data: data })
             });
-    },
 
+
+    },
 
     agregarComentario: function (req, res) {  //no se si esta bine que este aca esto
         /*aca procesa el formulario*/
         //res.send(req.body)
-        
-    
+        let logueado = req.session.usuarioLogueado
+        if (!logueado) {
+            return res.redirect('/users/login')
+        }
+
         db.Comentario.create({
             textoComentario: req.body.texto,
             idProducto: req.params.id,
@@ -70,7 +74,7 @@ const productsController = {
         })
 
         .catch(function (error) {
-            console.log("error al agregar producto", error);
+            console.log("Error al agregar producto", error);
             
         });
 

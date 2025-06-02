@@ -47,8 +47,8 @@
 									<p class="user">
 									<strong> <a href="/users/profile"> <%= data.comentarios[i].usuario.usuario %> : </a> </strong>
 									<!--usuario es el alias del modelo en la relacion-->
-									
-									<%= data.comentarios[i].textoComentario %></p>
+										<%= data.comentarios[i].textoComentario %>
+									</p>
 								</div>
 							</article>
 							<%} %>
@@ -56,16 +56,14 @@
 					
 
 					</section>
-					<% if (locals.user ) {%>
+					
 						
-						<form class="form" action="/products/id/<%=data.id%>" method="POST"> <!--creo que esta mal que vaya a esa ruta-->
+						<form class="form" action="/products/id/<%=data.id%>" method="POST"> 
 						<input class="form-input" type="text" name= "texto" value="" placeholder="Agregar comentario">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
 						
 					</form>
-					<% }else {%>
-						<p> "Para comentar tenes que estar logueado</p>
-					<%}%>
+					
 					
 					<hr>
 				</div>
