@@ -71,16 +71,14 @@
 									<img src="<%= data.productos[i].imagen %>" alt="<%= data.productos[i].nombre %>">
 								</figure>
 								<article class="product-box_data">
-									<h2>
+									<h2 class="products-title">
 										<%= data.productos[i].nombre %>
 									</h2>
 									<p>
-										
+
 									</p>
-								
-									
-									<p>
-										<%= data.productos[i].comentarios.length %>
+									<p class="comentarios-box">
+										Cantidad de comentarios: <%= data.productos[i].comentarios.length %>
 									</p>
 								</article>
 							</a>

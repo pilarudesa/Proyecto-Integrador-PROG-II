@@ -34,14 +34,24 @@
 			<% if (locals.user ) {%>
 			<form action="/products/add" method="POST">
 				<div>
-				  <label>Nombre:</label><input type="text" name="nombre">
-				  <label>Descripción:</label><input type="text" name="descripcion">
-				  <label>Imagen:</label><input type="text" name="imagen">
+					<div>
+						<label>Nombre:</label>
+						<input type="text" name="nombre" placeholder="Nombre">
+					</div>
+					<div>
+						<label>Descripción:</label>
+						<input type="text" name="descripcion" placeholder="Descripción">
+					</div>
+					<div>
+						<label>Imagen:</label>
+						<input type="text" name="imagen" placeholder="URL">
+					</div>
+
 				  <button type="submit">Enviar</button>
 				</div>
 			  </form>
 			 <% }else {%>
-						<p> "Para agregar un producto tenes que estar logueado</p>
+						<p>Para agregar un producto tenes que estar logueado</p>
 					<%}%> 
 	
 
