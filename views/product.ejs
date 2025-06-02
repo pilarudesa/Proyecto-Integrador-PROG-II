@@ -45,9 +45,12 @@
 								<img src="<%= data.comentarios[i].usuario.imagenPerfil %>" alt="">
 								<div class="data">
 									<p class="user">
-									<strong> <a href="/users/profile"> <%= data.comentarios[i].usuario.usuario %> : </a> </strong>
+									<strong> <a href="/users/profile/ <%= data.comentarios[i].usuario.id %>">
 									<!--usuario es el alias del modelo en la relacion-->
-										<%= data.comentarios[i].textoComentario %>
+										<%= data.comentarios[i].usuario.usuario %>
+									</a>
+									</strong>
+									<p><%= data.comentarios[i].textoComentario %> </p>
 									</p>
 								</div>
 							</article>
