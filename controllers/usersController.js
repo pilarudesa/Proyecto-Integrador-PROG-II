@@ -77,7 +77,7 @@ const usersController = {
             
             return res.redirect("/")
           } else {
-            res.send("contraseña incorrecta")
+            res.render("login", {error:"contraseña incorrecta"})
           }
 
 
