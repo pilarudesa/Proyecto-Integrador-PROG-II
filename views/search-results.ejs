@@ -41,7 +41,14 @@
 										<img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
 										<h2><%= producto.nombre %></h2>
 									</a>
-									</li>
+									<p>
+										Cargado por:
+										<a href="/users/profile/<%= producto.usuario.id %>">
+											<%= producto.usuario.usuario %>
+										</a>
+									</p>
+
+								</li>
 								<% }) %>
 						</ul>
 					<% } %>
